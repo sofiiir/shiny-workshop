@@ -56,7 +56,8 @@ ui <- navbarPage(
                         # trout mainPanel ----
                         mainPanel(
                           
-                          plotOutput(outputId = "trout_scatterplot_output")
+                          plotOutput(outputId = "trout_scatterplot_output") |> 
+                            withSpinner(color = "hotpink", type = 8)
                           
                         ) # END trout mainPanel
                         
@@ -91,7 +92,8 @@ ui <- navbarPage(
                         # penguin mainPanel ----
                         mainPanel(
                           
-                          plotOutput(outputId = "penguins_histogram_output")
+                          plotOutput(outputId = "penguins_histogram_output")|> 
+                            withSpinner(color = "hotpink", type = 8)
                           
                         ) # END penguin mainPanel
                         
